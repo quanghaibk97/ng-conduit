@@ -1,0 +1,31 @@
+html, body {
+    height: 100%; /* Đảm bảo chiều cao 100% cho html và body */
+    margin: 0; /* Xóa margin mặc định */
+}
+
+app-header {
+    position: fixed; /* Cố định header */
+    top: 0; /* Đặt ở trên cùng */
+    left: 0; /* Đặt ở bên trái */
+    right: 0; /* Đặt ở bên phải */
+    z-index: 1000; /* Đặt z-index cao hơn để header nằm trên cùng */
+    background-color: white; /* Màu nền cho header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho header */
+}
+
+app-footer {
+    position: fixed; /* Cố định footer */
+    bottom: 0; /* Đặt ở dưới cùng */
+    left: 0; /* Đặt ở bên trái */
+    right: 0; /* Đặt ở bên phải */
+    z-index: 1000; /* Đặt z-index cao hơn để footer nằm trên cùng */
+    background-color: white; /* Màu nền cho footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho footer */
+}
+
+.content {
+    padding-top: 60px; /* Khoảng cách từ header xuống nội dung */
+    padding-bottom: 40px; /* Khoảng cách từ footer lên nội dung */
+    min-height: calc(100vh - 100px); /* Đảm bảo nội dung không bị che bởi header và footer */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều cao */
+}

@@ -1,0 +1,64 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Căn nội dung lên phía trên */
+    height: 100vh; /* Chiều cao 100% của viewport */
+    background-color: #ffffff; /* Màu nền nhẹ */
+    padding-top: 50px; /* Thêm khoảng cách trên cho nội dung */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.signup-link {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #00b45a; /* Màu cho liên kết */
+}
+
+.login-form {
+    width: 400px; /* Chiều rộng lớn hơn cho form */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Khoảng cách giữa các nhóm */
+}
+
+input {
+    width: 100%; /* Chiều rộng đầy đủ */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input.error {
+    border-color: red; /* Đổi màu viền khi có lỗi */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem; /* Kích thước chữ nhỏ hơn */
+    margin-top: 5px; /* Khoảng cách trên cho thông báo lỗi */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00b45a; /* Màu nền nút */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #00cf68; /* Màu nền khi hover */
+}

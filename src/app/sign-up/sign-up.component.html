@@ -1,0 +1,50 @@
+<section class="login">
+    <h1>Sign in</h1>
+    <a href="http://localhost:4200/sign-in" class="signup-link">Have an account</a>
+
+    <form [formGroup]="signUpForm" class="login-form">
+        <div class="form-group">
+            <input 
+                nz-input 
+                placeholder="Username" 
+                formControlName="username" 
+                type="text" 
+                [ngClass]="{
+                    'error': signUpForm.controls.username.errors && signUpForm.controls.username.touched
+                }" 
+            />
+            <div *ngIf="signUpForm.controls.username.errors && signUpForm.controls.username.touched" class="error-message">Invalid username</div>
+        </div>
+
+        <div class="form-group">
+            <input 
+                nz-input 
+                placeholder="Email" 
+                formControlName="emial" 
+                type="text" 
+                [ngClass]="{
+                    'error': signUpForm.controls.emial.errors && signUpForm.controls.emial.touched
+                }" 
+            />
+            <div *ngIf="signUpForm.controls.emial.errors && signUpForm.controls.emial.touched" class="error-message">Invalid email</div>
+        </div>
+
+
+        <div class="form-group">
+            <input 
+                nz-input 
+                placeholder="Password" 
+                formControlName="password" 
+                type="password" 
+                [ngClass]="{
+                    'error': signUpForm.controls.password.errors && signUpForm.controls.password.touched
+                }" 
+            />
+            <div *ngIf="signUpForm.controls.password.errors && signUpForm.controls.password.touched" class="error-message">Invalid password</div>
+        </div>
+
+        <div class="form-group">
+            <button type="button" (click)="submit()">Sign up</button>
+        </div>
+    </form>
+</section>
